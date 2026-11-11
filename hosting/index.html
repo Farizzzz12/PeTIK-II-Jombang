@@ -16,6 +16,7 @@
   <meta name="twitter:title" content="PeTIK II Jombang — Belajar IT, Bangun Masa Depan" />
   <meta name="twitter:description" content="Pesantren teknologi informasi binaan YBM PLN di Jombang." />
   <meta name="twitter:image" content="https://webpetik.petikjombang.com/static/images/logo2.png" />
+  <link rel="icon" href="https://webpetik.petikjombang.com/static/images/logo2.png" />
   <title>PeTIK II Jombang — Belajar IT, Bangun Masa Depan</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +36,7 @@
     .cursor-dot{position:fixed;left:0;top:0;width:13px;height:13px;border-radius:50%;pointer-events:none;z-index:10000;opacity:0;transform:translate(-50%,-50%);background:linear-gradient(135deg,#00d4ff,#ffcf00);box-shadow:0 0 18px rgba(0,212,255,.8)}
     .click-burst{position:fixed;z-index:10001;pointer-events:none;width:18px;height:18px;border:2px solid #ffcf00;border-radius:50%;transform:translate(-50%,-50%) scale(.2);animation:clickBurst .65s ease-out forwards}
     @keyframes clickBurst{to{opacity:0;transform:translate(-50%,-50%) scale(4.2);border-color:#00aaff}}
-    .brand-logo{width:148px;height:48px;object-fit:contain;object-position:left center}
+    .brand-logo{width:190px;height:60px;object-fit:contain;object-position:left center}
     @media(hover:none){.cursor-aura,.cursor-dot{display:none}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
 
@@ -89,6 +90,14 @@
     body.dark #beranda .bg-white\/80{background:#142746}
     body.dark #beranda .border-blue-900\/10{border-color:#ffffff20}
 
+    @media(max-width:640px){.brand-logo{width:150px;height:48px}}
+    body.dark .brand-logo{background:#fff;border-radius:.85rem;padding:.3rem .65rem;box-sizing:content-box}
+    .id-logo-card{background:linear-gradient(135deg,#fff,#eaf4ff);border:1px solid #dbe7fb;box-shadow:0 24px 60px -30px #0b3a8f66}
+    body.dark .id-logo-card{background:#fff;border-color:#ffffff30}
+    body.dark #identitas{background:#0b1a33}
+    body.dark #identitas .bg-white:not(.id-logo-card){background:#142541;border-color:#ffffff22}
+    body.dark #identitas .text-blue-950{color:#f4f7ff}
+    body.dark #identitas .text-slate-500,body.dark #identitas .text-slate-600{color:#b6c3dc}
     @keyframes waPulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.7);opacity:0}}
     .wa-pulse{animation:waPulse 2.2s ease-out infinite}
     @media(prefers-reduced-motion:reduce){.wa-pulse{animation:none;display:none}}
@@ -117,7 +126,7 @@
         <img class="brand-logo" src="https://webpetik.petikjombang.com/static/images/logo2.png" alt="Logo resmi PeTIK Jombang dan YBM PLN" />
       </a>
       <div class="hidden items-center gap-8 text-sm font-bold text-blue-950 md:flex">
-        <a class="transition hover:text-blue-600" href="#tentang">Tentang</a><a class="transition hover:text-blue-600" href="#keunggulan">Keunggulan</a><a class="transition hover:text-blue-600" href="#program">Program IT</a><a class="transition hover:text-blue-600" href="#galeri">Galeri</a><a class="transition hover:text-blue-600" href="#lokasi">Lokasi</a>
+        <a class="transition hover:text-blue-600" href="#tentang">Tentang</a><a class="transition hover:text-blue-600" href="#identitas">Logo</a><a class="transition hover:text-blue-600" href="#keunggulan">Keunggulan</a><a class="transition hover:text-blue-600" href="#program">Program IT</a><a class="transition hover:text-blue-600" href="#galeri">Galeri</a><a class="transition hover:text-blue-600" href="#lokasi">Lokasi</a>
       </div>
       <div class="flex items-center gap-3"><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Aktifkan mode gelap"><span id="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Mode Gelap</span></button><a href="https://wa.me/6281393963363" target="_blank" rel="noopener" class="rounded-full bg-yellow-400 px-5 py-3 text-sm font-extrabold text-blue-950 shadow-lg shadow-yellow-950/20 transition hover:-translate-y-0.5 hover:bg-yellow-300">Hubungi Kami <span aria-hidden="true">↗</span></a></div>
     </nav>
@@ -164,6 +173,30 @@
     <div class="grid items-center gap-12 lg:grid-cols-[.85fr_1.15fr]">
       <div class="reveal"><div class="mb-4 text-xs font-black tracking-[.22em] text-blue-600">MENGENAL PeTIK</div><h2 class="text-3xl font-black leading-tight text-blue-950 sm:text-4xl">Pendidikan teknologi yang membentuk <span class="text-blue-600">kompetensi dan karakter.</span></h2><div class="mt-6 h-1.5 w-20 rounded-full bg-yellow-400"></div></div>
       <div class="reveal"><p class="text-lg leading-8 text-slate-600">PeTIK II Jombang merupakan lembaga pendidikan berbasis pesantren yang memadukan pembelajaran Teknologi Informasi dan Komunikasi dengan pembinaan keislaman. Kami percaya bahwa keterampilan masa depan perlu berjalan beriringan dengan akhlak yang mulia.</p><p class="mt-4 leading-7 text-slate-500">Melalui program pendidikan selama satu tahun, santri dibekali kemampuan praktis di bidang digital marketing dan pengembangan perangkat lunak agar lebih siap menghadapi kebutuhan dunia industri.</p></div>
+    </div>
+  </section>
+
+  <!-- IDENTITAS / LOGO -->
+  <section id="identitas" class="bg-[#f4f8ff] py-20 lg:py-24">
+    <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-[1fr_1fr] lg:gap-16 lg:px-8">
+      <div class="reveal id-logo-card rounded-[2rem] p-8 sm:p-12">
+        <img src="https://webpetik.petikjombang.com/static/images/logo2.png" alt="Logo resmi PeTIK II Jombang dan YBM PLN" class="mx-auto h-auto max-h-40 w-full max-w-md object-contain" loading="lazy" />
+        <div class="mt-8 flex flex-wrap justify-center gap-2 border-t border-blue-100 pt-6">
+          <span class="rounded-full border border-blue-200 bg-white px-4 py-1.5 text-xs font-bold text-blue-900">Teknologi</span>
+          <span class="rounded-full border border-blue-200 bg-white px-4 py-1.5 text-xs font-bold text-blue-900">Keislaman</span>
+          <span class="rounded-full border border-blue-200 bg-white px-4 py-1.5 text-xs font-bold text-blue-900">Karakter</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="mb-4 text-xs font-black tracking-[.22em] text-blue-600">IDENTITAS KAMI</div>
+        <h2 class="text-3xl font-black leading-tight text-blue-950 sm:text-4xl">Mengenal logo <span class="text-blue-600">PeTIK II Jombang</span></h2>
+        <div class="mt-6 h-1.5 w-20 rounded-full bg-yellow-400"></div>
+        <p class="mt-6 text-lg leading-8 text-slate-600">Logo ini adalah identitas resmi PeTIK II Jombang, pesantren teknologi informasi dan komunikasi binaan YBM PLN. Ia mewakili kolaborasi antara dunia pesantren dan dunia teknologi.</p>
+        <div class="mt-7 space-y-4">
+          <div class="flex gap-4 rounded-2xl border border-blue-100 bg-white p-5"><div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[#082b68] text-sm font-black text-yellow-300">P</div><div><div class="font-extrabold text-blue-950">PeTIK — Pesantren Teknologi Informasi &amp; Komunikasi</div><p class="mt-1 text-sm leading-6 text-slate-500">Tempat santri belajar digital marketing dan pengembangan perangkat lunak sambil tetap dibina nilai-nilai keislaman.</p></div></div>
+          <div class="flex gap-4 rounded-2xl border border-blue-100 bg-white p-5"><div class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-yellow-400 text-sm font-black text-blue-950">Y</div><div><div class="font-extrabold text-blue-950">YBM PLN — Pembina dan pendukung</div><p class="mt-1 text-sm leading-6 text-slate-500">Yayasan Baitul Maal PLN mendukung program pendidikan, sehingga peserta dapat belajar tanpa biaya pendidikan.</p></div></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -222,7 +255,7 @@
   <!-- CTA -->
   <section class="px-5 py-20 lg:px-8"><div class="reveal relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-yellow-400 px-7 py-14 text-center text-blue-950 sm:px-12"><div class="absolute -left-12 -top-20 h-56 w-56 rounded-full border-[30px] border-blue-950/5"></div><div class="absolute -bottom-28 -right-10 h-64 w-64 rounded-full border-[35px] border-blue-950/5"></div><div class="relative"><div class="text-xs font-black tracking-[.2em]">MULAI LANGKAH BESARMU</div><h2 class="mx-auto mt-4 max-w-3xl text-3xl font-black leading-tight sm:text-4xl">Masa depan digital dimulai dari kesempatan belajar.</h2><p class="mx-auto mt-4 max-w-xl leading-7 text-blue-950/75">Hubungi PeTIK II Jombang untuk mendapatkan informasi lebih lanjut mengenai program pendidikan.</p><a href="https://wa.me/6281393963363" target="_blank" rel="noopener" class="mt-8 inline-flex items-center gap-3 rounded-full bg-blue-950 px-7 py-4 text-sm font-extrabold text-white shadow-xl transition hover:-translate-y-1 hover:bg-blue-800">Hubungi Admin PeTIK <span>↗</span></a></div></div></section>
 
-  <footer class="bg-[#061d49] px-5 py-10 text-white lg:px-8"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-7 sm:flex-row sm:items-center"><div class="flex items-center gap-3"><img class="h-12 w-36 object-contain object-left" src="https://webpetik.petikjombang.com/static/images/logo2.png" alt="Logo PeTIK Jombang dan YBM PLN"/><div class="hidden sm:block"><div class="font-extrabold">PeTIK II Jombang</div><div class="text-xs text-blue-200">Pesantren Teknologi Informasi & Komunikasi</div></div></div><div class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-blue-100"><a class="transition hover:text-yellow-300" href="#tentang">Tentang</a><a class="transition hover:text-yellow-300" href="#keunggulan">Keunggulan</a><a class="transition hover:text-yellow-300" href="#lokasi">Lokasi</a><span id="footer-social" class="contents"></span></div></div><div class="mx-auto mt-8 max-w-7xl border-t border-white/10 pt-6 text-xs text-blue-300">© <span id="year"></span> PeTIK II Jombang. Seluruh hak cipta dilindungi.</div></footer>
+  <footer class="bg-[#061d49] px-5 py-10 text-white lg:px-8"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-7 sm:flex-row sm:items-center"><div class="flex items-center gap-3"><img class="h-12 w-36 rounded-xl bg-white object-contain object-left px-2 py-1" src="https://webpetik.petikjombang.com/static/images/logo2.png" alt="Logo PeTIK Jombang dan YBM PLN"/><div class="hidden sm:block"><div class="font-extrabold">PeTIK II Jombang</div><div class="text-xs text-blue-200">Pesantren Teknologi Informasi & Komunikasi</div></div></div><div class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-blue-100"><a class="transition hover:text-yellow-300" href="#tentang">Tentang</a><a class="transition hover:text-yellow-300" href="#keunggulan">Keunggulan</a><a class="transition hover:text-yellow-300" href="#lokasi">Lokasi</a><span id="footer-social" class="contents"></span></div></div><div class="mx-auto mt-8 max-w-7xl border-t border-white/10 pt-6 text-xs text-blue-300">© <span id="year"></span> PeTIK II Jombang. Seluruh hak cipta dilindungi.</div></footer>
 
   <a id="wa-float" href="https://wa.me/6281393963363?text=Assalamu%27alaikum%2C%20saya%20ingin%20bertanya%20tentang%20PeTIK%20II%20Jombang." target="_blank" rel="noopener" aria-label="Chat WhatsApp PeTIK II Jombang" class="fixed bottom-5 right-5 z-[90] flex items-center gap-3 rounded-full bg-[#25d366] p-3.5 text-white shadow-2xl shadow-green-900/30 transition hover:-translate-y-1 hover:bg-[#1fb956] sm:pr-5">
     <span class="wa-pulse absolute inset-0 -z-10 rounded-full bg-[#25d366]"></span>
